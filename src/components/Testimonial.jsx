@@ -1,4 +1,4 @@
-import ProfilePic from "../Assets/john-doe-image.png";
+import ProfilePic from "../assets/john-doe-image.png";
 import { AiFillStar } from "react-icons/ai";
 
 
