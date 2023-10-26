@@ -22,25 +22,37 @@ const Navbar = () => {
     const menuOptions = [
         {
             text: "Home",
-            icon: <HomeIcon />
+            icon: <HomeIcon />,
+            link: "/"
         },
         {
             text: "Sobre",
-            icon: <InfoIcon />
+            icon: <InfoIcon />,
+            link: "#about"
         },
         {
             text: "Depoimentos",
-            icon: <CommentRoundedIcon />
+            icon: <CommentRoundedIcon />,
+            link: "#testimonial"
         },
         {
             text: "Contato",
             icon: <PhoneRoundedIcon />,
+            link: "#contact"
         },
         {
             text: "Carrinho",
             icon: <ShoppingCartRoundedIcon />,
         },
     ]
+
+   const alterarUrl =( url ) => {
+    history.pushState({},null, url);
+    document.getElementById("url").innerHTML = window.location.href;
+
+
+
+   }
 
     return <nav>
         <div className="nav-logo-container">
@@ -49,8 +61,8 @@ const Navbar = () => {
         <div className="navbar-links-container">
             <a href="">Home</a>
             <a href="#about">Sobre</a>
-            <a href="">Depoimentos</a>
-            <a href="">Contato</a>
+            <a href="#testimonial">Depoimentos</a>
+            <a href="#contact">Contato</a>
             <a href=""><BsCart2 className='navbar-cart-icon' /></a>
             <button className="primary-button">Compre agora</button>
         </div>
@@ -64,7 +76,7 @@ const Navbar = () => {
                     <ListItem key={item.text} disablePadding>
                         <ListItemButton>
                         <ListItemIcon>{item.icon}</ListItemIcon>
-                        <ListItemText primary={item.text} />
+                        <ListItemText primary={item.text}/>
                         </ListItemButton>
                     </ListItem>
                 ))}
