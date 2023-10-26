@@ -6,7 +6,7 @@ const Testimonial = () => {
   return <div id="testimonial" className="work-section-wrapper">
     <div className="work-section-top">
         <p className="primary-subheading">Depoimentos</p>
-        <h1 className="primary-heading">O que Eles Estão Dizendo</h1>
+        <h1 className="primary-heading">O que Eles Dizem</h1>
         <p className="primary-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis expedita odio necessitatibus animi officia!</p>
     </div>
     <div className="testimonial-section-bottom">
