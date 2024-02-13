@@ -14,10 +14,10 @@ const Home = () => {
             </div>
             <div className="home-text-section">
                 <h1 className="primary-heading">
-                    Sua Comida Favorita Entregue Fresca e Quente
+                    Sua Comida Favorita Fresca e Quente
                 </h1>
                 <p className="primary-text">
-                    Nos preocupamos com sua alimentação, por isso entregamos sua comida fresca e quente, para que você possa aproveitar o melhor da sua refeição.
+                    Entregamos sua comida fresca e quente, para que você possa aproveitar o melhor da sua refeição.
                 </p>
                 <button className="secondary-button">
                     Compre Agora <FiArrowRight />
